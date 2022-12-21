@@ -1,18 +1,11 @@
-import {Pessoa} from './components/Pessoa'
+import { useState} from 'react'
+import { MyButton } from './components/MyButton'
 
 const App = () => {
-  let list = [
-    {name: 'ana', age: 20},
-    {name: 'samy', age: 30},
-    {name: 'bia', age: 40},
-  ]
+  const handleClick = () => {}
   return (
     <div>
-      <ul>
-        {list.map((item, index) => (
-          <Pessoa key={index} data={item} />
-        ))}
-      </ul>
+      <MyButton />
     </div>
   )
 }
