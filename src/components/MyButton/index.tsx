@@ -1,5 +1,9 @@
-import './styles.css'
+import styles from './styles.module.css'
 
 export const MyButton = () => {
-    return <button className='btn-main'>MyButton</button>
+    return (
+        <div>
+            <button className={styles.btn}></button>
+        </div>
+    )
 }
